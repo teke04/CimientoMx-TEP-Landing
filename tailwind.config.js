@@ -27,8 +27,11 @@ module.exports = {
                     
                 },
                 landing:{
-                    
+                    'naranjaIndustrial': '#FF5C00',
+                    'grisOscuro': '#2D2D2D',
                 },
+                naranjaIndustrial: '#FF5C00', // Color global para compatibilidad
+                grisOscuro: '#2D2D2D', // Color global para compatibilidad
           },
           backgroundImage: {
               'degradado-1': 'linear-gradient(to top, #5F3D7C, #8867A4)',
