@@ -75,15 +75,7 @@ class Controlador_Prospectos extends Controlador {
                     'telefono' => $telefono
                 ];
                 
-                // Agregar campos opcionales solo si tienen valor
-                if ($interes_texto) {
-                    $datosEmail['interes'] = $interes_texto;
-                }
-                
-                if ($servicio_texto) {
-                    $datosEmail['servicio'] = $servicio_texto;
-                }
-                
+                // Agregar landing si tiene valor
                 if ($landing_url) {
                     $datosEmail['landing'] = $landing_url;
                 }

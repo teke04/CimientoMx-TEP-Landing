@@ -893,6 +893,10 @@ video {
   margin-top: 1px;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1028,6 +1032,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .max-h-full {
@@ -1683,6 +1691,11 @@ video {
   border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\#FBC87A\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 200 122 / var(--tw-border-opacity, 1));
+}
+
 .border-b-white {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
@@ -1878,6 +1891,16 @@ video {
 .bg-yellow-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FBC87A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 200 122 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FF5C00\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 92 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-50 {
@@ -2312,6 +2335,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2464,6 +2495,11 @@ video {
 .text-yellow-700 {
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#38426E\] {
+  --tw-text-opacity: 1;
+  color: rgb(56 66 110 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2831,6 +2867,11 @@ video {
   background-color: rgb(117 79 155 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#ff7a33\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 122 51 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:py-8:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -3080,6 +3121,10 @@ video {
     height: 500px;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -3090,6 +3135,14 @@ video {
 
   .md\:w-\[30\%\] {
     width: 30%;
+  }
+
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:flex-row {
@@ -3162,6 +3215,22 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .md\:text-\[70px\] {
+    font-size: 70px;
   }
 }
 
