@@ -27,25 +27,6 @@
 
 
                 <div class="mt-8 lg:mt-16 w-full overflow-x-auto">
-                    <?php
-                    // Verificar si hay al menos un lead con interés
-                    $hayIntereses = false;
-                    foreach ($leads as $lead) {
-                        if (!empty($lead['interes'])) {
-                            $hayIntereses = true;
-                            break;
-                        }
-                    }
-                    
-                    // Verificar si hay al menos un lead con servicio
-                    $hayServicios = false;
-                    foreach ($leads as $lead) {
-                        if (!empty($lead['servicio'])) {
-                            $hayServicios = true;
-                            break;
-                        }
-                    }
-                    ?>
                     
                     <table class="w-full border-separate border-spacing-0 rounded-xl overflow-hidden shadow-lg">
                         <thead>
@@ -55,12 +36,6 @@
                                 <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3">Nombre</th>
                                 <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3 hidden lg:table-cell">Teléfono</th>
                                 <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3 hidden xl:table-cell">Correo</th>
-                                <?php if ($hayIntereses): ?>
-                                <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3 hidden lg:table-cell">Interés</th>
-                                <?php endif; ?>
-                                <?php if ($hayServicios): ?>
-                                <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3 hidden lg:table-cell">Servicio</th>
-                                <?php endif; ?>
                                 <th class="px-4 py-3 text-left border-b-2 border-teven-secundario-3">Acciones</th>
                             </tr>
                         </thead>
@@ -72,12 +47,6 @@
                                 <td class="px-4 py-3"><?php echo htmlspecialchars($lead['nombre']); ?></td>
                                 <td class="px-4 py-3 hidden lg:table-cell"><?php echo htmlspecialchars($lead['telefono']); ?></td>
                                 <td class="px-4 py-3 hidden xl:table-cell truncate max-w-xs"><?php echo htmlspecialchars($lead['correo']); ?></td>
-                                <?php if ($hayIntereses): ?>
-                                <td class="px-4 py-3 hidden lg:table-cell"><?php echo $lead['interes'] ? htmlspecialchars($lead['interes']) : '-'; ?></td>
-                                <?php endif; ?>
-                                <?php if ($hayServicios): ?>
-                                <td class="px-4 py-3 hidden lg:table-cell"><?php echo $lead['servicio'] ? htmlspecialchars($lead['servicio']) : '-'; ?></td>
-                                <?php endif; ?>
                                 <td class="px-4 py-3">
                                     <!-- Botón de Borrar -->
                                     <form method="post" action="<?=ruta('admin/leads-borrar')?>" onsubmit="return confirm('¿Estás seguro de que deseas borrar este lead?');">
