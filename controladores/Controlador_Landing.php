@@ -24,9 +24,7 @@ class Controlador_Landing extends Controlador {
         $servicios = db()->ejecutarConsulta($sql, []);
 
         $this->mostrar('landing/home',[
-            'keyword'          => $sqlReply['keyword'],
-            'h1'               => $sqlReply['h1'],
-            'h2'               => $sqlReply['h2'],
+            'landing'          => $sqlReply,
             'landing_id'       => $sqlReply['id'],
             'intereses'        => $intereses,
             'servicios'        => $servicios
